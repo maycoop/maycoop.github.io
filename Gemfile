@@ -1,4 +1,3 @@
-source :rubygems
-
-gem "jekyll", "~> 0.11.2"
-gem "neat", "~> 1.0.0"
+source "https://rubygems.org"
+gem 'jekyll-admin', group: :jekyll_plugins
+gemspec
