@@ -1,36 +1,45 @@
 ---
-layout: home
-description: ""
+title: Home
+layout: page
+permalink: index.html
+order: 1
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+<div class="row intro">
+  <div class="col-md-4">
+    <h3>What is a CO-OP?</h3>
+    <iframe src="https://www.youtube.com/embed/mc04jfN8iic" frameborder="0" gesture="media" allowfullscreen></iframe>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+    <h4>We are located at:</h4>
+    <div class="address">
+      13435 104 Avenue, Surrey BC, V3T5K6
+    </div>
+
+    <br>
+    <div class="">
+      <h4>
+        Interested in living at the Mayflower CO-OP?
+      </h4>
+      Submit the filled application at <a href="mailto:maycoop@shawbiz.ca">maycoop@shawbiz.ca</a>
+      <a href="img/maycoopapplication.doc" class="btn btn-primary">Download application</a><br>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <h3>The Mayflowe CO-OP:</h3>
+    <img class="img-responsive img-thumbnail" src="img/building_whole.jpg" alt="">
+
+    <div class="">
+      <p>
+        The Mayflower Co-op is a 16 story concrete highrise with mountain and city views centrally located in Surrey North Central.
+        We are within walking distance of  major shops and restaurants just 2 blocks from Surrey Center Mall, Skytrain bus loop, SFU and Surrey Community Center. Located in the Community Center is a  pool, full gym and ice arena.
+      </p>
+
+      <p>
+        The Mayflower Facility includes Gated underground parking with video security system.
+        Located across the street from the new Surrey City Hall, the Mayflower is in what is considered the future City Center.
+      </p>
+    </div>
+
+  </div>
+</div>

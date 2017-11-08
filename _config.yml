@@ -13,10 +13,8 @@ email_username:  maycoop@shawbiz.ca
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 plugins:
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
