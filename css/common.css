@@ -1,3 +1,7 @@
 .navbar {
     margin-bottom: 0px;
 }
+
+p, ul{
+  margin-top: 0px;
+}

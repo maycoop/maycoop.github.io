@@ -9,30 +9,88 @@ order: 2
   <h3>NOTE: There are No Subsidies Available at the moment.</h3>
 </div>
 
+<div class="alert alert-info">
+  <h3>NOTE: Not pets allowed.</h3>
+</div>
+
 <section id="rental-info">
-  Here are the rental prices. Share purchase is required.
-<p>
-  1 Bedroom units range from:  $715 to $755
-  <br>
-  Share $1000
+  <table>
+    <thead>
+      <tr>
+        <th>Unit type</th>
+        <th>Monthly rent</th>
+        <th>Share purchase (mandatory)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1 Bedroom</td>
+        <td>$745 to $765</td>
+        <td>$1000</td>
+      </tr>
+
+      <tr>
+        <td>2 Bedroom</td>
+        <td>$872 to $880</td>
+        <td>$1500</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Amenities</h4>
+  <p>
+    Hot and Cold Water included. You must pay your own electrical/heat and cable.<br/>
+    All units have a storage locker in the basement.
+  </p>
+
+  <p style="margin-bottom: 0px;">
+    Other facilities at Mayflower CO-OP include:
+    <ul>
+      <li>Large meeting room with full kitchen and 2 washrooms (handicapped accessible). </li>
+      <li>Large lounge with table & chairs, couches, puzzle table, TV, library of books and DVD movies</li>
+      <li>Laundry room with 5 washers ($1.00 per load) and 8 dryers (25 cents for every 12 minutes) open 7 days a week from 8:00 am to 9:00 pm.</li>
+      <li>Outdoor community barbeque</li>
+    </ul>
+  </p>
+
+  <h4>Parking</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Parking type</th>
+        <th>Monthly fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Indoor</td>
+        <td>$10</td>
+      </tr>
+
+      <tr>
+        <td>Outdoor</td>
+        <td>$6</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<h3>Participation is Mandatory!</h3>
+<p>Every member is required to participate a minimum of 24 hrs per fiscal year. Participation includes sitting on a committee such as Social, Membership, Building Maintenance, Security, Newsletter, etc., or on the Board of Directors.
 </p>
 
+<section id="application-process">
+  <h3>Interested in living at Mayflower CO-OP?</h3>
+  <h4>Becoming a member</h4>
+  <p>An application form must be filled out and submitted to the co-op office.  Suitable candidates are invited to attend an interview conducted by the Membership Committee.</p>
 
-<p>
-  2 Bedroom units range from:  $837 to $877
-  <br>
-  Share $1500
-</p>
+  <h4>Acceptance</h4>
+  <p>Verify landlord references, employment and credit history
+  Proof of income (up-to-date information must be provided).
+  Note:  submitting an application are placed in the waiting list file; this does not guarantee acceptance.  Applications are kept on file for 1 year; if you wish to remain on file past 1 year, you must contact the co-op to keep you application active.</p>
 
-<p>
-  Hot and Cold Water  included
-</p>
-
-<p>
-  Indoor and Outdoor Tenant Parking
-  Indoor $10 &amp; Outdoor $ 6 per month
-</p>
-Every tenant is expected to contribute 24 hours of participation per year in CO-OP related tasks!
+  <h4>Meetings</h4>
+  <p>Members are required to attend a minimum of 2 General Meetings per year.</p>
 </section>
 
 <section id="1bd">
@@ -75,11 +133,11 @@ Every tenant is expected to contribute 24 hours of participation per year in CO-
     </div>
 
     <div class="row">
-        {% for img in (1..4) %}
-        <div class="col-md-3">
-          <img src="img/2bd{{img}}.jpg" class="img-responsive img-rounded" alt="">
-        </div>
-        {% endfor %}
+      {% for img in (1..4) %}
+      <div class="col-md-3">
+        <img src="img/2bd{{img}}.jpg" class="img-responsive img-rounded" alt="">
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
